@@ -10,13 +10,13 @@ const SocketContext = createContext();
 export const useSocket = () => useContext(SocketContext);
 
 export const SocketProvider = (props) => {
-  const socket = io("localhost:8000", {
+  const socket = io("demo-meet-be.onrender.com", {
     // transports: ["websocket"],
   });
 
   const peer = new Peer(undefined, {
-    host: "localhost",
-    port: "8000",
+    host: "demo-meet-be.onrender.com",
+    // port: "",
     path: "/peerjs",
   });
 
