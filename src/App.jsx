@@ -9,7 +9,7 @@ function App() {
     <>
       <SocketProvider>
         <Routes>
-          <Route path="/meet" element={<Meet />} />
+          <Route path="/" element={<Meet />} />
         </Routes>
       </SocketProvider>
     </>
